@@ -1,0 +1,5 @@
+students {margin-top:15px;font-weight:bold;color:black;}
+ student {display:block;margin-left:15px;color:gray;}
+ user, name {color:red;font-size:15pt;}
+ college, branch {color:blue;font-size:15pt;}
+ email {color:green;font-size:15pt;}

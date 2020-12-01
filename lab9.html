@@ -1,0 +1,55 @@
+<html>
+<head>
+<script>
+ function fun()
+ { 
+   
+   var a=document.f1.s.value;
+   alert(a);
+  if(a=="c")
+   {
+ 
+   document.writeln("c programing lalnguage"+"<br>");
+   document.writeln("author:dennice ritch"+"<br>");
+   document.writeln("price:300");
+    }
+if(a=="java")
+ {
+document.writeln("java the complete reference"+"<br>");
+document.writeln("author:james gosling"+"<br>");
+document.writeln("price:400");
+}
+ 
+if(a=="python")
+ {
+document.writeln("python programing language");
+document.writeln("author:guido van rossum"+"<br>");
+document.writeln("price:500");
+}
+ if(a=="wt")
+ {
+document.writeln("web technology"+"<br>");
+document.writeln("author:logent learnin solutions inc"+"<br>");
+document.writeln("price:550");
+}
+}
+</script>
+<body>
+<h1><center>Welcome to cyber book Store</center></h1>
+<ul>
+<li>c language</li>
+<li>java</li>
+<li>python</li>
+<li>web technology</li>
+</ul>
+<form name="f1">
+  <select name="s">
+  <option value="c"">c language</option>
+  <option value="java">java</option>
+  <option value="python">python</option>
+  <option value="wt">webtechnology</option>
+</select>
+<input type="button" value="submit" onclick="fun()">
+</form>
+</body>
+</html>

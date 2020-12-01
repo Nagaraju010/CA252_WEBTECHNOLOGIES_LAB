@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Form</title>
+</head>
+<body bgcolor="pink" align="center">
+   <form id="Myform">
+      <h3>Interaction with User</h3>
+        Firstname:<input type="text" name="fname" size=20><br>
+        Lastname :<input type="text" name="lname" size=20><br>
+      DateofBirth:<input type="text" name="dob" placeholder=dd-mm-yy><br>
+      <input type="button" value=submit onClick="display()">
+      <input type="reset" value="clear">
+   </form>
+   <p id="demo"></p>
+   <script type=text/javascript>
+	function display() 
+	{
+  		var x = document.getElementById("Myform");
+                var txt = "";
+                var i;
+	        for (i = 0; i < x.length-2; i++) 
+                  {
+                    txt = txt + x.elements[i].value + "<br>";
+                  }
+        document.getElementById("demo").innerHTML = txt;
+       }
+   </script>
+   </body>
+   </html>
+      
+  

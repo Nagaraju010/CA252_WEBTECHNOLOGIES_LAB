@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lab19.xsl" ?> 
+<books>
+	<book>
+		<title>PYTHON</title>
+		<author>Guido van Rossum </author>
+		<edition>6th edition</edition>
+		<price>720</price>
+	</book>
+	<book>
+		<title>JAVA</title>
+		<author>Herbert Schildt</author>
+		<edition>8th edition</edition>
+		<price>1200</price>
+	</book>
+	<book>
+		<title>C</title>
+		<author>Bala Guru Swamy</author>
+		<edition>5th edition</edition>
+		<price>610</price>
+	</book>
+	<book>
+		<title>Web Technology</title>
+		<author>Tim Berners lee </author>
+		<edition>8th edition</edition>
+		<price>1520</price>
+	</book>
+</books>
+	

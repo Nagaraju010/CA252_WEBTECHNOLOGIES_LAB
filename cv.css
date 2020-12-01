@@ -1,0 +1,71 @@
+<html>
+<head>
+ <title>Resume</title>
+</head>
+<body bgcolor="skyblue">
+<h1><font face="script" size="7" color="green">RESUME</font></h1>
+<img src="photo.jpg" align="right" width="150" height="150">
+<p>NAME:ANNAVARAPU LAKSHMI DURGA
+<br>MOBLIE: +918341056729
+<br>EMAIL:durgaannavarapu1997@gmail.com 
+<p>ADDRESS:
+<br>
+<p>Maatupalli vari street
+<br>kothapeta
+<br>Guntur,pincode:522001
+<p><b>Objective:</b> To get a really <i>sweet</i> job.</p>
+<p>Languages:</p>
+<ul style="list_style_type:disc;">
+<li>C</li>
+<li>Java</li>
+<li>Python</li>
+</ul>
+<p>Education:</p>
+<table border=“1”>
+ <tr>
+ <th>CousreName</th>
+ <th>Duration</th>
+ <th>InstitiuteName</th>
+ <th>percentage</th>
+ </tr>
+<tr>
+ <td>10th class</td>
+ <td>2012-2013</td>
+ <td>St.Joesph's High School</td>
+ <td>9.5</td>
+ </tr>
+ <tr>
+ <td>Intermediate</td>
+ <td>2013-2015</td>
+ <td>Govt.womens college</td>
+ <td>87%</td>
+ </tr>
+<tr>
+ <td>Degree</td>
+ <td>2015-2018</td>
+ <td>JKC College</td>
+ <td>84%</td>
+ </tr>
+</table>
+<p><b>STRENGTHS</b></P>
+<ul style="list_style_type:disc;">
+<li>Proficiency in communication skills</li>
+<li>Basic knowledge in MsOffice, Internet basics</li>
+<li>Self motivation and a passion to succeed</li>
+</ul>
+<p>HOBBIES</p>
+<ul style="list_style_type:disc;">
+<li>Interested in learning new things</li>
+<li>playing shuttle</li>
+<li>helping to mom</li>
+</ul>
+<p>DECLARTION:I here by declare that all the information given in this resume is true to the best of my knowledge and belief.
+<p (A.lakshmiDurga) align="right">
+<style>
+#grad1 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+</style>
+</body>
+</html>

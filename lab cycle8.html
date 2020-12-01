@@ -1,0 +1,52 @@
+<html> 
+<head>
+<title>Registration form</title>
+<script>
+function validateForm()
+{
+ var x = document.forms["f1"].value;
+{
+ if(document.f1.name.value == "")
+ 
+   window.alert("please enter your first name");
+ 
+ if(document.f1.last.value == "")
+
+ alert("please enter your last name");
+  
+
+if(document.f1.Email.value == "")
+
+ alert("plese enter your EmailId");
+ 
+
+if(document.f1.date.value == "")
+
+alert("please enter your D.O.B");
+ 
+
+if(document.f1.phone.value == "")
+
+ alert("plese enter your phone number");
+ 
+
+if(document.f1.country.value == "")
+
+ alert("plese enter your country name");
+ 
+}
+}
+</script>
+</head>
+<body>
+<form name="f1" >
+Frist name:<input type="text" name="name" placeholder="fristname" method="post"><br><br>
+Lastname:<input type="text" name="last" placeholder="lastname"><br><br>
+EmailID:<input type="email" name="Email" placeholder="username@email.com"><br><br>
+D.O.B:<input type="date" name="date"><br><br>
+Phonenumber:<input type="text" name="phone" placeholder="phonenumber"><br><br>
+Country:<input type="text" name="country" placeholder="country"><br><br>
+<input type="submit" value="submit" onclick="validateForm()">
+</form>
+</body>
+</html>

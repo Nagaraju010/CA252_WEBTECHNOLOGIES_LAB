@@ -1,0 +1,49 @@
+<html>
+<body>
+<input type="button" onclick="update()" value="update"></input>
+<input type="button" onclick="sort()" value="sort"></input>
+<input type="button" onclick="dupl()" value="duplicates"></input>
+<script>
+var i;
+var a=new Array("durga","girija","kavya","durga");
+function update()
+{
+a[0]="durga";
+for(i=0;i<a.length;i++)
+{
+alert(a[i]);
+}
+}
+function sort()
+{
+a.sort();
+for(i=0;i<a.length;i++)
+{
+document.writeln(a[i]);
+}
+}
+function dupl()
+{
+var flag=0;
+for(var j=0;j<a.length-1;j++)
+{
+for(var i=j+1;i<a.length;i++)
+{
+if(a[j]==a[i])
+{
+flag=1;
+}
+}
+}
+if(flag==1)
+{
+alert("duplicates is there");
+}
+else
+{
+alert("No duplicates");
+}
+}
+</script>
+</body>
+</html>

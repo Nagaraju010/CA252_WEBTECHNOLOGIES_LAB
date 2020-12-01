@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> registation form1 </title>
+<script>
+function validate()
+{
+if(document.f1.name.value==""||(document.f1.name.value).length<5)
+ 
+  window.alert("please enter proper name");
+ 
+if(document.f1.address.value=="")
+ 
+ window.alert("pleae enter address");
+ 
+if(document.f1.phone.value==""||(document.f1.phone.value).length!=10)
+ 
+ window.alert("plese enter 10 digits phone number");
+}
+</script>
+</head>
+<body>
+<form name="f1" onsubmit="validate()">
+Name:<input type="text" name="name" placeholder="name"><br><br>
+Address:<textarea rows="5" cols="20" name="address" placeholder="address"></textarea><br><br>
+Phonenumber:<input type="text" name="phone"><br><br> 
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

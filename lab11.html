@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>lab 27</title>
+<script type="text/javascript">
+var count,b,name;
+ count=0;
+function check()
+{
+ 
+ if(count<3)
+ {
+  if(document.f.t1.value!="rams"||document.f.t2.value!="kgbrsrams52")
+  {
+   if(count==2)
+   {
+    document.f.t1.value=""
+    document.f.t2.value=""
+    alert("not valid")
+    alert("SORRY!YOU ARE UNABLE TO LOGIN")
+   }
+   else
+   {
+    alert("not valid!try again")
+    document.f.t1.value=""
+    document.f.t2.value=""
+    if(count==1)
+    alert("YOU HAVE ONLY ONE CHOICE!")
+   }
+  }
+  else
+   alert("valid");
+  count++;
+ }
+}
+</script>
+</head>
+<body>
+<form name="f">
+Enter User Name:
+<input type="text" name="t1"><br>
+Enter Password:
+<input type="password" name="t2"><br>
+<input type="button" value="submit" onClick="check()">
+</form>
+</body>
+</html>
+
+  

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>interaction with user</title>
+</head>
+<body bgcolor="pink" align="center">
+  <h1>Interaction With User</h1>
+  <form name="f1">
+  First name:<input type="text" name="fname">
+  <br><br>
+  last name:<input type="text" name="lname">
+  <br><br>
+  date of birth:<input type="text" name="dob">
+  <br><br>
+  <input type="button" value="submit" onclick="display1()">
+  <input type="reset" value="clear">
+  </form>
+ <script type="text/javascript">
+ var v1,v2,v3;
+ function display1()
+ {
+   v1=document.f1.fname.value;
+   v2=document.f1.lname.value;
+   v3=document.f1.dob.value;
+   document.writeln("USER DATA IS <br>");
+  document.writeln("The first name is: "+v1+" <br>");
+  document.writeln("The last name is:"+v2+" <br>");
+  document.writeln("The date of birth is:"+v3+" <br>");
+ }
+</script>
+</body>
+</html>

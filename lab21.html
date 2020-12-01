@@ -1,0 +1,43 @@
+<html>
+<head> 
+<script language="javascript"> 
+   function fncDisplayInfo() 
+   { 
+     var xhttp=null; 
+     var flag=0;
+     var userid = document.frm.unum.value; 
+     var xmlDoc = new ActiveXObject("microsoft.xmldom"); 
+     xmlDoc.load("lab21.xml");    
+ 
+     var noOfUsers = xmlDoc.getElementsByTagName("users")[0].childNodes.length; 
+     for(var i=0;i<parseInt(noOfUsers);i++) 
+     { 
+       var Uid =xmlDoc.getElementsByTagName("user")[i].childNodes[0].childNodes[0].nodeValue; 
+ 	  if( Uid == userid) 
+	    { 
+	       document.write("<h1> User Details</h1>"); 
+               document.write("<br>Length = " + noOfUsers);
+	       var id= xmlDoc.getElementsByTagName("user")[0].childNodes[1].childNode[0].nodeValue;
+               document.write("<br><b>User ID :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+Uid) 
+	        
+	       flag =1; 
+               break; 
+	     } 
+	} 
+	if(flag==0) 
+	{ 
+	    alert("InValid User"); 
+        } 
+    } 
+   </script> 
+</head> 
+<body> 
+  <center>
+    <h1><b>User Information</h1> 
+    <form name="frm"> 
+        User ID : <input type="text" name="unum"><br> 
+                  <input type="button" name="btn" value="Submit" onclick="fncDisplayInfo()">
+    </form> 
+  </center>
+</body>
+</html>

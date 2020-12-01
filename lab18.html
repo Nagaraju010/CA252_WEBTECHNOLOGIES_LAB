@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Properties</h2>
+
+<p><h3>The length property returns the length of a string:</h3></p>
+<p id="demo"></p><br>
+
+<p><h3>The indexOf() method accepts a second parameter as the starting position for the search:</h3></p>
+<p id="demo2"></p><br>
+
+<p><h3>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</h3></p>
+<p id="demo3"></p><br>
+
+<p><h3>Replace "Microsoft" with "Rvrjc Mca" in the paragraph below:</h3></p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo4">Please visit Microsoft!</p>
+ 
+<h2>JavaScript Math function methods</h2>
+
+
+<p><h3>Power function in math functions:</h3></p>
+<p id="demo1"></p>
+<p><h3>round function in math functions:</h3></p>
+<p id="demo5"></p>
+<p><h3>Square root function in math functions:</h3></p>
+<p id="demo6"></p>
+<p><h3>Absolute value function in math functions:</h3></p>
+<p id="demo7"></p>
+
+
+
+
+
+<script>
+
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = txt.length;
+
+var str = "Please bhushan where 'bhushan' occurs!";
+var pos = str.indexOf("bhushan",15);
+document.getElementById("demo2").innerHTML = pos;
+
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(0,7);
+document.getElementById("demo3").innerHTML = res;
+
+
+function myFunction() {
+  var str = document.getElementById("demo4").innerHTML; 
+  var txt1 = str.replace("Microsoft","Rvrjc Mca");
+  document.getElementById("demo4").innerHTML = txt1;
+}
+
+
+
+document.getElementById("demo1").innerHTML = Math.pow(3,5);
+document.getElementById("demo5").innerHTML = Math.round(6.4);
+document.getElementById("demo6").innerHTML = Math.sqrt(64);
+document.getElementById("demo7").innerHTML = Math.abs(-15);
+document.getElementById("demo7").innerHTML = Math.add(4,5);
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>lab28</title>
+<script type="text/javascript">
+function password()
+{
+ var no="0123456789";
+ var c="abcdefghijklmnopqrstuvwxyz";
+ var ch=no+c+c.toUpperCase();
+ var pl=8;
+ var randomstring="";
+ for(var i=0;i<pl;i++)
+ {
+  var rno=Math.floor(Math.random()*ch.length);
+  randomstring+=ch.substring(rno,rno+1);
+  document.f.t2.value=randomstring;
+ }
+}
+function time()
+{
+ window.setInterval("password()",15000);
+}
+function valid()
+{
+ if(document.f.t1.value!=""||document.f.t2.value!="")
+ window.alert("welcome");
+ else
+ window.alert("check once before submit");
+}
+</script>
+</head>
+<body>
+<form name="f">
+User Name:
+<input type="text" name="t1"><br>
+Password:
+<input type="text" name="t2" onfocus="time()"><br>
+<center>
+<input type="button" value="generate" onclick="password()">
+<input type="button" value="submit" onclick="valid()">
+</form>
+</body>
+</html>

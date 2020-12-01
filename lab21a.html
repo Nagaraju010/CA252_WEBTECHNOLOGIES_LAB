@@ -1,0 +1,46 @@
+<html>
+<head> 
+<script language="javascript"> 
+   function fncDisplayInfo() 
+   { 
+     var xhttp=null; 
+     var flag=0;
+     var userid = document.frm.unum.value; 
+     var xmlDoc = new ActiveXObject("microsoft.xmldom"); 
+     xmlDoc.load("lab21.xml");    
+ 
+     var noOfUsers = xmlDoc.getElementsByTagName("users")[0].childNodes.length; 
+     for(var i=0;i<parseInt(noOfUsers);i++) 
+     { 
+       var uid =xmlDoc.getElementsByTagName("user")[i].childNodes[0].childNodes[0].nodeValue; 
+ 	  if(userid == uid) 
+	    { 
+	       document.write("<h1> User Details</h1>"); 
+	       var uid = xmlDoc.getElementsByTagName("user")[i].childNodes[1].childNodes[0].nodeValue; 
+	       var uname =xmlDoc.getElementsByTagName("user")[i].childNodes[2].childNodes[0].nodeValue; 
+	       var uaddress = xmlDoc.getElementsByTagName("user")[i].childNodes[3].childNodes[0].nodeValue; 
+	       document.write("<br><b>User ID :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+uid) 
+	       document.write("<br>User Name :&nbsp"+uname); 
+	       document.write("<br>Address :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "+uaddress); 
+	        
+	       flag =1; 
+               break; 
+	     } 
+	} 
+	if(flag==0) 
+	{ 
+	    alert("InValid User"); 
+        } 
+    } 
+   </script> 
+</head> 
+<body> 
+  <center>
+    <h1><b>User Information</h1> 
+    <form name="frm"> 
+        User ID : <input type="text" name="unum"><br> 
+                  <input type="button" name="btn" value="Submit" onclick="fncDisplayInfo()">
+    </form> 
+  </center>
+</body>
+</html>
